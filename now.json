@@ -1,0 +1,10 @@
+{
+  "env": {
+    "GOOGLE_ANALYTICS_TRACKING_ID": "@google_analytics_tracking_id"
+  },
+  "build": {
+    "env": {
+      "REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID": "@google_analytics_tracking_id"
+    }
+  }
+}

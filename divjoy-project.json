@@ -1,0 +1,718 @@
+{
+  "data": [
+    {
+      "type": "instance",
+      "subtype": "app-instance",
+      "componentId": "app",
+      "id": 4010090,
+      "isVisible": true,
+      "children": []
+    }
+  ],
+  "components": [
+    {
+      "type": "component",
+      "subtype": "page-component",
+      "path": "",
+      "id": 7985613,
+      "isVisible": true,
+      "code": "",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 963629,
+          "attributes": "{\n  // primary, link, info, success, warning, \n  // danger, white, light, dark, black\n\tcolor: \"white\",\n  // normal, medium, large\n  size: \"medium\",\n  // Background image URL\n  backgroundImage: \"\",\n  // Background image opacity (0-1)\n  backgroundImageOpacity: 1,\n  // Text content\n  title: \"Your landing page title here\",\n  subtitle: \"This landing page is perfect for showing off your awesome product and driving people to sign up for a paid plan.\",\n  buttonText: \"Start Free Trial\",\n  // Button onClick handler\n  buttonOnClick: () => {\n    // Navigate to pricing page\n    router.push('/pricing');\n  }\n}",
+          "id": 3650592,
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Hero Section",
+          "propsArray": [
+            {
+              "key": "color",
+              "value": "white",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "size",
+              "value": "medium",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "backgroundImage",
+              "value": "",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "backgroundImageOpacity",
+              "value": "1",
+              "isString": false,
+              "type": "NumericLiteral"
+            },
+            {
+              "key": "title",
+              "value": "Your landing page title here",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "subtitle",
+              "value": "This landing page is perfect for showing off your awesome product and driving people to sign up for a paid plan.",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "buttonText",
+              "value": "Start Free Trial",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "buttonOnClick",
+              "value": "() => {\n  // Navigate to pricing page\n  router.push('/pricing');\n}",
+              "isString": false,
+              "type": "ArrowFunctionExpression"
+            }
+          ]
+        }
+      ],
+      "nameFormatted": "IndexPage",
+      "nameStyleModule": "IndexPage",
+      "modulePath": "src/pages/index"
+    },
+    {
+      "type": "component",
+      "name": "Hero Section",
+      "id": 963629,
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1079246,
+          "attributes": "{\n\tcolor: props.color,\n  size: props.size,\n  backgroundImage: props.backgroundImage,\n  backgroundImageOpacity: props.backgroundImageOpacity\n}",
+          "children": [
+            {
+              "type": "element",
+              "tagName": "div",
+              "classNames": [
+                "container"
+              ],
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 5415335,
+                  "attributes": "{\n\ttitle: props.title,\n  subtitle: props.subtitle,\n  // Text size (1-6)\n  size: 1,\n  // Space between title/subtitle\n  spaced: true,\n  className: \"has-text-centered\"\n}",
+                  "id": 4342289,
+                  "isVisible": true,
+                  "children": [],
+                  "propsArray": [
+                    {
+                      "key": "title",
+                      "value": "props.title",
+                      "isString": false,
+                      "type": "MemberExpression"
+                    },
+                    {
+                      "key": "subtitle",
+                      "value": "props.subtitle",
+                      "isString": false,
+                      "type": "MemberExpression"
+                    },
+                    {
+                      "key": "size",
+                      "value": "1",
+                      "isString": false,
+                      "type": "NumericLiteral"
+                    },
+                    {
+                      "key": "spaced",
+                      "value": "true",
+                      "isString": false,
+                      "type": "BooleanLiteral"
+                    },
+                    {
+                      "key": "className",
+                      "value": "has-text-centered",
+                      "isString": true,
+                      "type": "StringLiteral"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "classNames": [
+                    "buttons",
+                    "is-centered"
+                  ],
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 8669042,
+                      "attributes": "{\n\tparentColor: props.color,\n  // small, normal, medium, large\n  size: \"medium\",\n  onClick: props.buttonOnClick\n}",
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "{props.buttonText}",
+                          "id": 8504820,
+                          "isVisible": true,
+                          "children": []
+                        }
+                      ],
+                      "id": 1089874,
+                      "isVisible": true,
+                      "propsArray": [
+                        {
+                          "key": "parentColor",
+                          "value": "props.color",
+                          "isString": false,
+                          "type": "MemberExpression"
+                        },
+                        {
+                          "key": "size",
+                          "value": "medium",
+                          "isString": true,
+                          "type": "StringLiteral"
+                        },
+                        {
+                          "key": "onClick",
+                          "value": "props.buttonOnClick",
+                          "isString": false,
+                          "type": "MemberExpression"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": 4786882,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "style": "",
+                  "propsArray": []
+                }
+              ],
+              "id": 2060107,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNameExpressions": [],
+              "style": "",
+              "propsArray": []
+            }
+          ],
+          "id": 8805486,
+          "isVisible": true,
+          "propsArray": [
+            {
+              "key": "color",
+              "value": "props.color",
+              "isString": false,
+              "type": "MemberExpression"
+            },
+            {
+              "key": "size",
+              "value": "props.size",
+              "isString": false,
+              "type": "MemberExpression"
+            },
+            {
+              "key": "backgroundImage",
+              "value": "props.backgroundImage",
+              "isString": false,
+              "type": "MemberExpression"
+            },
+            {
+              "key": "backgroundImageOpacity",
+              "value": "props.backgroundImageOpacity",
+              "isString": false,
+              "type": "MemberExpression"
+            }
+          ]
+        }
+      ],
+      "tags": [
+        "Hero",
+        "Popular"
+      ],
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "code": "",
+      "nameFormatted": "HeroSection",
+      "nameStyleModule": "HeroSection",
+      "modulePath": "src/components/HeroSection"
+    },
+    {
+      "type": "component",
+      "name": "Section",
+      "id": 1079246,
+      "children": [
+        {
+          "type": "element",
+          "tagName": "section",
+          "classNames": [
+            "hero",
+            "section",
+            "is-block",
+            "is-relative"
+          ],
+          "classNameExpressions": [
+            {
+              "js": "color",
+              "classNames": [
+                "is-{color}"
+              ]
+            },
+            {
+              "js": "size",
+              "classNames": [
+                "is-{size}"
+              ]
+            }
+          ],
+          "children": [
+            {
+              "type": "if",
+              "js": "backgroundImage",
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 1986700,
+                  "attributes": "{\n\timage: backgroundImage,\n  opacity: backgroundImageOpacity,\n  repeat: backgroundImageRepeat\n}",
+                  "id": 6976618,
+                  "isVisible": true,
+                  "children": [],
+                  "propsArray": [
+                    {
+                      "key": "image",
+                      "value": "backgroundImage",
+                      "isString": false,
+                      "type": "Identifier"
+                    },
+                    {
+                      "key": "opacity",
+                      "value": "backgroundImageOpacity",
+                      "isString": false,
+                      "type": "Identifier"
+                    },
+                    {
+                      "key": "repeat",
+                      "value": "backgroundImageRepeat",
+                      "isString": false,
+                      "type": "Identifier"
+                    }
+                  ]
+                }
+              ],
+              "id": 4689902,
+              "isVisible": true
+            },
+            {
+              "type": "children",
+              "id": 6313629,
+              "isVisible": true,
+              "children": []
+            }
+          ],
+          "attributes": "{\n\t...otherProps\n}",
+          "style": "// Add light border if two white\n// sections next to each other.\n.is-white + &.is-white {\n  border-top: 1px solid #F0F0F0;\n}",
+          "id": 7573224,
+          "isVisible": true,
+          "image": "",
+          "name": "",
+          "propsArray": [
+            {
+              "key": null,
+              "value": "otherProps",
+              "isString": false,
+              "type": "SpreadElement"
+            }
+          ]
+        }
+      ],
+      "code": "\tconst {\n    color, \n    size, \n    backgroundImage,\n    backgroundImageOpacity,\n    backgroundImageRepeat,\n    children,\n    // Passed to section element\n    ...otherProps \n  } = props;\n",
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "nameFormatted": "Section",
+      "nameStyleModule": "SectionComponent",
+      "modulePath": "src/components/Section"
+    },
+    {
+      "type": "component",
+      "name": "Section Button",
+      "id": 8669042,
+      "children": [
+        {
+          "type": "element",
+          "tagName": "button",
+          "classNames": [
+            "button"
+          ],
+          "children": [
+            {
+              "type": "children",
+              "id": 776571,
+              "isVisible": true,
+              "children": []
+            }
+          ],
+          "attributes": "{\n  ...otherProps\n}",
+          "classNameExpressions": [
+            {
+              "js": "['primary', 'info', 'success', 'warning', 'danger', 'black', 'dark'].includes(parentColor)",
+              "classNames": [
+                "is-{parentColor}",
+                "is-inverted"
+              ]
+            },
+            {
+              "js": " ['white', 'light'].includes(parentColor) || !parentColor",
+              "classNames": [
+                "is-primary"
+              ]
+            },
+            {
+              "js": "size",
+              "classNames": [
+                "is-{size}"
+              ]
+            },
+            {
+              "js": "state",
+              "classNames": [
+                "is-{state}"
+              ]
+            },
+            {
+              "js": "fullWidth",
+              "classNames": [
+                "is-fullwidth"
+              ]
+            }
+          ],
+          "id": 7815642,
+          "isVisible": true,
+          "image": "",
+          "name": "",
+          "style": "",
+          "propsArray": [
+            {
+              "key": null,
+              "value": "otherProps",
+              "isString": false,
+              "type": "SpreadElement"
+            }
+          ]
+        }
+      ],
+      "description": "A button whose color is determined by the background color of its parent component (passed in via `parentColor` prop).",
+      "code": "\tconst {\n    parentColor, \n    size, \n    state, \n    fullWidth,\n    // Passed to button element\n    ...otherProps\n  } = props;\n",
+      "isVisible": true,
+      "nameLibrary": "",
+      "tags": [],
+      "nameFormatted": "SectionButton",
+      "nameStyleModule": "SectionButton",
+      "modulePath": "src/components/SectionButton"
+    },
+    {
+      "type": "component",
+      "name": "Section Header",
+      "id": 5415335,
+      "children": [
+        {
+          "type": "element",
+          "tagName": "header",
+          "children": [
+            {
+              "type": "if",
+              "js": "props.title",
+              "id": 3832557,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "h1",
+                  "classNames": [
+                    "title",
+                    "has-text-weight-bold"
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "{props.title}",
+                      "id": 3346646,
+                      "isVisible": true,
+                      "children": []
+                    }
+                  ],
+                  "classNameExpressions": [
+                    {
+                      "js": "props.size",
+                      "classNames": [
+                        "is-{props.size}"
+                      ]
+                    },
+                    {
+                      "js": "props.size === 1",
+                      "classNames": [
+                        "is-size-2-mobile"
+                      ]
+                    },
+                    {
+                      "js": "props.spaced",
+                      "classNames": [
+                        "is-spaced"
+                      ]
+                    }
+                  ],
+                  "id": 5428871,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "name": "",
+                  "style": "",
+                  "propsArray": []
+                }
+              ],
+              "isVisible": true
+            },
+            {
+              "type": "if",
+              "js": "props.subtitle",
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "p",
+                  "classNames": [
+                    "subtitle"
+                  ],
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "span",
+                      "id": 692891,
+                      "style": "// Subtitle text generally isn't very long\n// so usually looks better to limit width.\nmax-width: 700px;\n// So we can have max-width but still\n// have alignment controlled by text-align.\ndisplay: inline-block;",
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "{props.subtitle}",
+                          "id": 4050505,
+                          "isVisible": true,
+                          "children": []
+                        }
+                      ],
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "propsArray": []
+                    }
+                  ],
+                  "id": 2045497,
+                  "classNameExpressions": [
+                    {
+                      "js": "props.size > 4",
+                      "classNames": [
+                        "is-6"
+                      ]
+                    }
+                  ],
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "name": "",
+                  "style": "",
+                  "propsArray": []
+                }
+              ],
+              "id": 4428299,
+              "isVisible": true
+            }
+          ],
+          "classNameExpressions": [
+            {
+              "js": "props.className",
+              "classNames": [
+                "{props.className}"
+              ]
+            }
+          ],
+          "style": "// Add bottom margin if element below\n&:not(:last-child){\n\tmargin-bottom: 3rem;\n}",
+          "id": 4841502,
+          "name": "Header",
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "image": "",
+          "classNames": [],
+          "propsArray": []
+        }
+      ],
+      "code": "\t// Render nothing if no title or subtitle\n\tif (!props.title && !props.subtitle){\n    return null;\n  }\n",
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "nameFormatted": "SectionHeader",
+      "nameStyleModule": "SectionHeader",
+      "modulePath": "src/components/SectionHeader"
+    },
+    {
+      "type": "component",
+      "name": "Background Image",
+      "id": 1986700,
+      "children": [
+        {
+          "type": "element",
+          "tagName": "div",
+          "attributes": "{\n  style: {\n    '--image': `url(${props.image})`,\n    '--opacity': props.opacity\n  }\n}",
+          "style": "// Set using CSS vars defined\n// in element inline style.\nbackground-image: var(--image);\nopacity: var(--opacity);\n// Fill parent container\nbackground-position: center center;\nbackground-size: cover;\ntop: 0;\nleft: 0;\nbottom: 0;\nright: 0;\nposition: absolute;\n// Place under other elements\nz-index: 0;\n\n// Make it a repeating pattern\n&.repeat {\n  background-size: auto;\n  background-position: 0% 0%;\n  background-repeat: true;\n}",
+          "id": 4730303,
+          "classNameExpressions": [
+            {
+              "js": "props.repeat",
+              "classNames": [
+                "repeat"
+              ]
+            }
+          ],
+          "isVisible": true,
+          "image": "",
+          "name": "",
+          "classNames": [],
+          "children": [],
+          "propsArray": [
+            {
+              "key": "style",
+              "value": "{\n  '--image': `url(${props.image})`,\n  '--opacity': props.opacity\n}",
+              "isString": false,
+              "type": "ObjectExpression"
+            }
+          ]
+        }
+      ],
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "code": "",
+      "nameFormatted": "BackgroundImage",
+      "nameStyleModule": "BackgroundImage",
+      "modulePath": "src/components/BackgroundImage"
+    },
+    {
+      "type": "component",
+      "subtype": "page-component",
+      "path": "dashboard",
+      "id": 7400968,
+      "isVisible": true,
+      "code": "",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 963629,
+          "attributes": "{\n  // primary, link, info, success, warning, \n  // danger, white, light, dark, black\n\tcolor: \"white\",\n  // normal, medium, large\n  size: \"medium\",\n  // Background image URL\n  backgroundImage: \"\",\n  // Background image opacity (0-1)\n  backgroundImageOpacity: 1,\n  // Text content\n  title: \"Your landing page title here\",\n  subtitle: \"This landing page is perfect for showing off your awesome product and driving people to sign up for a paid plan.\",\n  buttonText: \"Start Free Trial\",\n  // Button onClick handler\n  buttonOnClick: () => {\n    // Navigate to pricing page\n    router.push('/pricing');\n  }\n}",
+          "id": 3598034,
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Hero Section",
+          "propsArray": [
+            {
+              "key": "color",
+              "value": "white",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "size",
+              "value": "medium",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "backgroundImage",
+              "value": "",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "backgroundImageOpacity",
+              "value": "1",
+              "isString": false,
+              "type": "NumericLiteral"
+            },
+            {
+              "key": "title",
+              "value": "Your landing page title here",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "subtitle",
+              "value": "This landing page is perfect for showing off your awesome product and driving people to sign up for a paid plan.",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "buttonText",
+              "value": "Start Free Trial",
+              "isString": true,
+              "type": "StringLiteral"
+            },
+            {
+              "key": "buttonOnClick",
+              "value": "() => {\n  // Navigate to pricing page\n  router.push('/pricing');\n}",
+              "isString": false,
+              "type": "ArrowFunctionExpression"
+            }
+          ]
+        }
+      ],
+      "nameFormatted": "DashboardPage",
+      "nameStyleModule": "DashboardPage",
+      "modulePath": "src/pages/dashboard"
+    },
+    {
+      "id": "app",
+      "type": "component",
+      "subtype": "app-component",
+      "globalStyle": "// COLORS\n$primary: #00d1b2;\n$info: #209CEE;\n$success: #23D160;\n$warning: #FFDD57;\n$danger: #FF3860;\n$light: #F5F5F5;\n$dark: #363636;\n\n// TEXT\n$text: #4A4A4A;\n$link: #3273DC;\n$body-family: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif;\n$title-family: false;\n$button-family: false;\n\n// BREAKPOINTS\n$gap: 32px;\n$tablet: 769px;\n$desktop: 960px + (2*$gap);\n$widescreen: 1152px + (2*$gap);\n$fullhd: 1344px + (2*$gap);\n$widescreen-enabled: true;\n$fullhd-enabled: false;\n\n// LAYOUT\n$section-padding: 3rem 1.5rem;\n$section-padding-medium: 6rem 1.5rem;\n$section-padding-large: 9rem 1.5rem;\n\n// SEE DOCS FOR MORE: \n// https://bit.ly/30UvE5O\n\n// IMPORT BULMA\n@import \"~bulma/bulma.sass\";\n\nbody {\n  // Fix Bulma bug where columns cause\n  // horizontal scroll on mobile.\n  // https://github.com/jgthms/bulma/issues/449\n  overflow-x: hidden;\n}",
+      "isVisible": true,
+      "code": "",
+      "children": [
+        {
+          "type": "pages",
+          "id": 3395820,
+          "isVisible": true,
+          "children": [
+            {
+              "type": "instance",
+              "subtype": "page-instance",
+              "componentId": 7985613,
+              "id": 2298241,
+              "isVisible": true,
+              "children": []
+            },
+            {
+              "type": "instance",
+              "subtype": "page-instance",
+              "componentId": 7400968,
+              "id": 4349245,
+              "isVisible": true,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "nameFormatted": "App",
+      "nameStyleModule": "App",
+      "modulePath": "src/pages/_app"
+    }
+  ]
+}
